@@ -6,10 +6,10 @@ iconToggle.addEventListener("click", function(e){
     e.preventDefault();
 
     if(!isVisible){        
-        menuToggle.style.width = "408px";
+        menuToggle.className += " visible";
         isVisible = !isVisible;
     }else{
-        menuToggle.style.width = "calc(0% + 22px)";
+        menuToggle.className = "menu-lateral";
         isVisible = !isVisible;
     }
 });
